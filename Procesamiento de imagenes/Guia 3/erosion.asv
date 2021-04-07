@@ -1,0 +1,19 @@
+clc 
+close all
+clear all
+I=imread('Otsu.png');
+[H W]=size(I);
+
+I1=I.*0; %imagen resultante de la erosion
+for i=2:1:H-1
+for j=2:1:W-1
+ I1(i,j)=I(i,j);
+ 
+ if (imf(i,j)==1 & (imf(i,j-1)==0 | imf(i-1,j)==0 | imf(i,j+1)==0 | imf(i+1,j)==0))
+ a(i,j)=0;
+ end
+end
+end
+
+figure(1);subplot(1,2,1),imshow(imf), title ('OTSU methoda');
+figure(1);subplot(1,2,2),imshow(erosionada), title ('erosion operation OTSU');

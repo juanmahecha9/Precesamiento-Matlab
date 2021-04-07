@@ -1,0 +1,13 @@
+:) 1. Binarizar la imagen con el método OTSU y guardar el resultado.
+
+2. Binarizar la imagen con el método de cuenca y guardar el resultado.
+
+3. Implementar un Etiquetado automático de cada objeto a partir de las imágenes resultantes dependiendo de la imagen de conexión 8n.
+
+4. A partir de lo resultante aplicar una operación de apertura y multiplicar punto a punto con la imagen original.
+
+5. aplicar una operación de cierre y multiplicar punto a punto con la imagen original.
+
+6. Aplicar una operación de dilatación y multiplicar punto a punto con la imagen original.
+
+7. Aplicar una operación de erosión y multiplicar punto a punto con la imagen original.

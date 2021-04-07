@@ -1,0 +1,22 @@
+clear all 
+close all
+nombre='rad3.png'
+I=imread(nombre)
+figure, imshow(I)
+info=imfinfo(nombre);
+alto= info.Height;
+ancho=info.Width;
+bitdepth=info.BitDepth;
+x=0:1:255;
+Isalida=I*0;
+%modifico contraste-----
+
+Y=30.*(exp(x.*(1/100)));
+Lut=[x;Y];
+for i=1:1:alto
+    for j=1:1:ancho
+        [s pos]=find(x==I(i,j));
+        Isalida(i,j)=Y(pos);
+    end
+end
+figure,imshow(Isalida)

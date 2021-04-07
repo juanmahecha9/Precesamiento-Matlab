@@ -1,0 +1,19 @@
+METODOLOGÍA
+
+1. Máscaras. Diseñe una función en matlab que aplique una máscara cuadrada de 3x3 en una imagen digital usando el concepto de convolución 2D. La función tiene el formato: function [I Iout] = fmask (I, mask)
+Dónde:
+- Iout = es la imagen de salida.
+I = Es la imagen de entrada.
+Mask = contiene los coeficientes para la ventana de convolución.
+Condiciones:
+- Tome en cuenta el problema de la gestión de las fronteras, puede agregar ceros o evitar la información de borde.
+- No puedes usar funciones matlab nativas para hacer la convolución.
+2. Lea una imagen de ejemplo y utilice el comando imnoise y genere una imagen de prueba de 3, con Gaussian, sal y pimienta y ruido spleckle.
+
+------------------------------------------------------------------------------------------------
+Con su propia función creada:
+1. Aplique un filtro medio en las 3 imágenes de la prueba y trate de eliminar todo ruido posible, muestre los resultados.
+2. Aplique un filtro mediano en las 3 imágenes de prueba y trate de eliminar todo ruido posible, muestre los resultados.
+3. Aplique un filtro de paso de banda alto básico y un impulso alto, muestre los resultados.
+4. Aplique las máscaras del gradiente (sobel, prewit, Roberts), muestre los resultados.
+5. Aplicar los operadores laplacianos sobre las imágenes de las pruebas y mostrar sus resultados.

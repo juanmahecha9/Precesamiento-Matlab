@@ -1,0 +1,27 @@
+Proceso a aplicar
+
+PARTE UNO (Información estadística)
+1. Cargue la imagen de muestra (mri.tif) en matlab y asíntela a una variable.
+
+2. Extraiga la información básica de la imagen.
+Ceremonias:
+I. Calcular la distribución de probabilidad de brillo.
+II. Calcule la función de probabilidad de densidad de brillo.
+III. Normalizar la imagen entre 0 y 1 valores.
+IV. Normalize la imagen entre -1 y 1.
+V. Calcule el valor medio del brillo de la imagen completa.
+VI. Calcule el valor promedio de la región de vecindad de 9 x 9 en una ventana deslizante sobre la imagen y almacene cada valor en una matriz de valores medios.
+VII. Calcule el promedio del histograma de brillo.
+VIII. Calcular la desviación estándar de la imagen y usar la información del histograma.
+IX. Calcular el coeficiente de variación.
+X. Calcular el ruido de señal a la relación SNR de la imagen.
+
+Parte-dos (mejora de contraste y brillo)
+1. Cargue una imagen de mamografía a partir del mini conjunto de datos MIAS disponible.
+
+Ceremonias:
+I. Ecualizar el histograma de la imagen y mostrar los resultados.
+II. Utilizar una adaptación de la ecualización (clahe) para ajustar las siguientes distribuciones: Exponencial, Rayleight y Gaussiana.
+III. Con una LUT calcular una función gaussiana y aplicarla.
+IV. Con una LUT se aplican las correcciones exponenciales, lineales y gamma.
+
